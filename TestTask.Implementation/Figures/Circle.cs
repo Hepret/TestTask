@@ -3,6 +3,7 @@ using TestTasks;
 
 namespace TestTask.Implementation.Figures
 {
+    [Serializable]
     public class Circle : CustomFigure
     {
         private double _r;
@@ -34,7 +35,7 @@ namespace TestTask.Implementation.Figures
 
         public override string ToString()
         {
-            return $"Круг: Радиус{R}";
+            return $"Круг c радиусом {R}";
         }
     }
 }

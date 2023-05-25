@@ -3,6 +3,7 @@ using TestTasks;
 
 namespace TestTask.Implementation.Figures
 {
+    [Serializable]
     public class Square : CustomFigure
     {
         private double _a;
@@ -31,6 +32,11 @@ namespace TestTask.Implementation.Figures
         public override double CalculateSquare()
         {
             return Math.Pow(A, 2);
+        }
+
+        public override string ToString()
+        {
+            return $"Квадрат со стороной: {A}";
         }
     }
 }

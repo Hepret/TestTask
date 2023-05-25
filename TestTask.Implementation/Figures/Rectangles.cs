@@ -3,6 +3,7 @@ using TestTasks;
 
 namespace TestTask.Implementation.Figures
 {
+    [Serializable]
     public class Rectangles : CustomFigure
     {
         private double _a;
@@ -46,6 +47,11 @@ namespace TestTask.Implementation.Figures
         public override double CalculateSquare()
         {
             return A * B;
+        }
+
+        public override string ToString()
+        {
+            return $"Прямоугольник со стороной A: {A}, B: {B}";
         }
     }
 }
