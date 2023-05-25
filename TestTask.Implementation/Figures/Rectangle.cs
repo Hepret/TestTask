@@ -4,7 +4,7 @@ using TestTasks;
 namespace TestTask.Implementation.Figures
 {
     [Serializable]
-    public class Rectangles : CustomFigure
+    public class Rectangle : CustomFigure
     {
         private double _a;
         private double _b;
