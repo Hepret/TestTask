@@ -42,6 +42,7 @@ namespace TestTasks
     /// Некая геометрическая фигура обобщенно.
     /// Необходимо унаследовать от нее 3 типа фигур - круг, квадрат, прямоугольник
     /// </summary>
+    [Serializable]
     public abstract class CustomFigure
     {
         /// <summary>
